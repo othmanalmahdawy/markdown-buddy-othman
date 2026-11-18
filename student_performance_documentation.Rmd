@@ -11,12 +11,10 @@ for documentation planning, Markdown formatting,
 and writing suggestions.
 
 Prompts used are documented in Appendix.md.
-I will verify the R code by running it in RStudio,
-checking the output independently, and reviewing
-the rendered HTML report.
 
-I am responsible for the accuracy and originality
-of this work.
+I reviewed the documentation suggestions and ran
+the R code in RStudio. I am responsible for the
+accuracy and originality of this work.
 
 # Introduction
 
