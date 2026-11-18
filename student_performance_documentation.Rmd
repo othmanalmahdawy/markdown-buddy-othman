@@ -1,0 +1,111 @@
+---
+title: "Student Performance Analysis"
+author: "Othman Al-Mahdawy"
+date: "2026-11-18"
+output: html_document
+---
+# AI Assistance Declaration
+
+I used ChatGPT (GPT-4 mini) on November 18, 2026,
+for documentation planning, Markdown formatting,
+and writing suggestions.
+
+Prompts used are documented in Appendix.md.
+I will verify the R code by running it in RStudio,
+checking the output independently, and reviewing
+the rendered HTML report.
+
+I am responsible for the accuracy and originality
+of this work.
+
+# Introduction
+
+This project analyzes a synthetic student dataset
+using R programming.
+
+The purpose is to explore the relationship between
+study hours and student assessment scores.
+
+# Project Objectives
+
+- Create a student dataset.
+- Analyze student scores.
+- Calculate descriptive statistics.
+- Visualize the relationship between study hours and scores.
+
+# Purpose
+
+The purpose of this project is to analyze a
+synthetic dataset and understand student performance.
+
+# Inputs
+
+The dataset contains three variables:
+
+- student_id: Student identification number.
+- study_hours: Number of study hours.
+- score: Student assessment score.
+
+
+```{r}
+student_data <- data.frame(
+  student_id = 1:10,
+  study_hours = c(2, 3, 4, 5, 1, 6, 7, 3, 8, 5),
+  score = c(58, 62, 68, 72, 55, 78, 85, 64, 90, 75)
+)
+
+print(student_data)
+```
+
+# Interpretation
+
+The average student score is 70.7.
+The highest score is 90, while the lowest score is 55.
+
+The results suggest a positive relationship
+between study hours and student scores.
+
+However, this analysis does not prove
+that additional study hours directly cause
+higher assessment scores.
+
+
+# Descriptive Statistics
+
+The following section presents basic statistical measures for student assessment scores.
+
+```{r}
+mean(student_data$score)
+
+max(student_data$score)
+
+min(student_data$score)
+
+summary(student_data$score)
+```
+
+
+
+# Outputs
+
+The analysis produces:
+
+- Student data table.
+- Descriptive statistical summaries.
+- Average assessment score.
+- Highest and lowest scores.
+- A scatter plot showing study hours and scores.
+
+## Student Performance Visualization
+
+```{r}
+library(ggplot2)
+
+ggplot(student_data, aes(x = study_hours, y = score)) +
+  geom_point() +
+  labs(
+    title = "Study Hours and Student Scores",
+    x = "Study Hours",
+    y = "Student Score"
+  )
+```
