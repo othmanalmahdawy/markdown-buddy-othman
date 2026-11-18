@@ -33,4 +33,4 @@ I reviewed the suggestions and used relevant documentation and formatting ideas 
 
 ## 4. AI Use Statement
 
-ChatGPT was used as a documentation assistant
+ChatGPT was used as a documentation assistant. No AI-generated calculations are presented as independently verified student calculations. I am responsible for the accuracy and originality of my final submission.
